@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__left_icon {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 20px
+}
+
+.nav__left_name {
+    font-size: 20px;
+}
+
+.nav__right_icon {
+    background-color: #F26464;
+    color: white;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 100px;
+}
+
+.profile {
+    display: flex;
+    margin-top: 50px
+}
+
+.profile__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+    width: 40%;
+    margin-left: 30px;
+}
+.profile__information h2 {
+    font-size: 50px;
+}
+.profile img {
+    width: 40%;
+}
+
+.profile__detail {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.profile__detail_statistic h2 {
+    color: #F26464
+}
+
+.profile__detail_statistic span {
+    font-size: 20px;
+}
+
+.about-me {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.about-me b {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F26464;
+}
+
+.about-me p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.about-me div {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me button {
+    color: #F26464;
+    background-color: white;
+    border: 1px solid #F26464;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.about-me button:hover {
+    background-color: #F26464;
+    color: white
+}
+
+.skill {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.skill__heading {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F26464;
+    font-size: 20px;
+}
+
+.skill__block {
+    width: 50%;
+}
+
+.skill__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.skill__detail {
+    padding: 5px 10px;
+    border: 1px solid #D7D7D7;
+    border-radius: 50px;
+    margin: 20px 10px 0 0;
+    font-size: 20px
+}
