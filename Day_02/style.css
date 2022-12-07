@@ -85,8 +85,9 @@
 }
 
 .about-me p {
-    margin-top: 10px;
-    font-size: 30px;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 300;
 }
 
 .about-me div {
@@ -112,7 +113,7 @@
 
 .skill {
     display: flex;
-    margin-top: 30px;
+    margin-top: 100px;
     justify-content: space-between;
 }
 
@@ -136,6 +137,142 @@
     padding: 5px 10px;
     border: 1px solid #D7D7D7;
     border-radius: 50px;
-    margin: 20px 10px 0 0;
+    margin: 25px 10px 0 0;
     font-size: 20px
+}
+
+.experience {
+    margin-top: 100px;
+}
+
+.experience__heading {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F26464;
+    font-size: 20px;
+}
+
+.experience__detail {
+    width: 50%;
+}
+
+.experience__detail_title * {
+    line-height: 35px;
+}
+
+.experience__title_time {
+    font-size: 19px;
+}
+
+.experience__title_company {
+    font-size: 25px;
+}
+
+.experience__title_position {
+    font-size: 19px;
+}
+
+.experience__detail_content {
+    width: 80%;
+}
+
+.experience__detail_content * {
+    margin-top: 25px;
+    font-size: 19px;
+}
+
+.experience__detail_content li {
+    margin-left: 15px;
+}
+
+.experience__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.latest-work {
+    margin-top: 100px;
+}
+
+.latest-work__block {
+    margin-top: 20px;
+}
+
+.latest-work__block {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #F6F8FA;
+    padding: 30px;
+    padding-bottom: 0;
+    margin-top: 30px;
+}
+
+.block__content {
+    width: 40%;
+}
+
+.block__content * {
+    margin-top: 15px;
+}
+
+.block__content p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.latest-work__block img{
+    object-fit: cover;
+    width: 40%;
+}
+
+.block__content_title {
+    font-size: 30px;
+}
+
+.block__content_btn {
+    padding: 10px 20px;
+    background-color: white;
+    border: 2px solid #F26464;
+    color: #F26464;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: .5s;
+}
+
+
+.block__content_btn:hover {
+    background-color: #F26464;
+    color: white
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer button {
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid #F26464;
+    color: #F26464;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: .5s;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer button:hover {
+    background-color: #F26464;
+    color: white
+}
+
+.footer h1 {
+    font-size: 50px;
+    margin: 10px;
 }
