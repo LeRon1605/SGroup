@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    padding: 0 350px;
+    margin: auto;
+}
+
+main {
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main::before {
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: '';
+    width: 1143px;
+    height: 1149px;
+    transform: translate(25%, -25%);
+    z-index: -1;
+    /* border-radius: 26% 74% 76% 24% / 56% 37% 63% 44%; */
+    /* background-image: linear-gradient(45deg,#5c50cf 0%,#FF0099 100%); */
+    background-image: url('../images/home-header-bg.jpg');
+    background-size: cover;
+}
+
+.landing {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing__left {
+    width: 40%;   
+    font-size: 20px;
+    padding: 20px;
+}
+
+.landing__left input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid  rgba(185,190,199,.6);
+    outline: none;
+    transition: .5s;
+}
+
+.landing__left input:hover {
+    box-shadow: 0 10px 25px rgba(5, 5, 19, 0.1);
+}
+
+.landing__left input:focus {
+    border: 1px solid  #7b68ee;
+}
+
+.landing__group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.landing__button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(5, 5, 19, 0.1);
+    font-size: 16;
+    font-family: GohamPro-400;
+    font-weight: bold;
+}
+
+.landing__button_large {
+    padding: 15px 25px;
+}
+
+.landing__button_purple {
+    color: white;
+    background-color: #7b68ee;
+}
+
+.landing__button_flat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+}
+
+.landing__button_flat p {
+    margin-left: 10px;
+    text-align: start;
+}
+
+.landing_right {
+    width: 70%;
+}
+
+.landing__title {
+    font-size: 50px;
+    font-family: Axifoma-800;
+}
+
+.review__block {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.review__block_img {
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.brand__img {
+    width: 7%;
+    margin-right: 50px;
+}
+
+.board {
+    width: 75vw;
+    border-radius: 100px;
+    margin: 50px auto;
+    padding: 110px 130px;
+    overflow: hidden;
+}
+
+.board__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board__row_left {
+    width: 35%;
+}
+
+.board__row_right {
+    width: 60%;
+}
+
+.board__row_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board__nav_item {
+    font-size: 14px;
+    font-family: Axifoma-700;
+    font-weight: bold;
+    padding-bottom: 2px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: .2s;
+}
+
+.board__nav_itemRed:hover {
+    border-bottom: 3px solid #FD71AF;
+}
+
+.board__nav_itemViolet:hover {
+    border-bottom: 3px solid #7b68ee;
+}
+
+.board__content_heading {
+    font-size: 48px;
+    font-family: Axifoma-800;
+}
+
+.board__group_replace {
+    font-family: Axifoma-800;
+    font-size: 12px;
+}
+.board__group_replace strong {
+    padding: 0 5px;
+}
+
+.board__nav_center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.board__nav_itemActiveRed {
+    border-bottom: 3px solid #FD71AF;
+}
+
+.board__nav_itemActiveViolet {
+    border-bottom: 3px solid #7b68ee;
+}
+
+.board__content_description {
+    font-size: 14px;
+    font-family: Axifoma-400;
+    line-height: 25px;
+    color: #292d34;
+}
+
+.board__content * {
+    margin: 20px 0;
+}
+
+.board__content_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board__content button {
+    cursor: pointer;
+}
+
+.board__content button:hover {
+    box-shadow: 0 10px 25px rgb(253 113 175 / 50%)
+}
+
+.board__bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #F2F0FD;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.board__bottom button {
+    background-color: inherit;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.board__bottom button:hover {
+    background-color: white;
+}
