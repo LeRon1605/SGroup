@@ -37,3 +37,4 @@ const createTab = (initElement, boardSelector, color) => {
 
 createTab('project_task', '#board-nav-1', 'Red');
 createTab('docs', '#board-nav-2', 'Violet');
+createTab('import', '#board-nav-3', '');

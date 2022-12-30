@@ -209,6 +209,21 @@ main::before {
     padding: 0 5px;
 }
 
+.board__nav_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.board__nav_wrap .board__nav_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 5px;
+    width: 40%;
+}
+
 .board__nav_center {
     display: flex;
     justify-content: space-between;
@@ -251,7 +266,7 @@ main::before {
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #F2F0FD;
+    left: 0;
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -265,4 +280,67 @@ main::before {
 
 .board__bottom button:hover {
     background-color: white;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item_num {
+    color: black;
+    background-color: white;
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-right: 30px;
+    font-size: 10px;
+    font-family: Axifoma-700;
+    transition: .1s;
+}
+
+.nav__item_bar {
+    width: 100%;
+    background-color: inherit;
+    height: 4px;
+    border-radius: 50px;
+    margin-left: 10px;
+    transition: .1s;
+}
+
+.nav__item_text {
+    color: #b9bec7;
+    font-size: 12px;
+    font-family: Axifoma-700;
+    transition: .1s;
+}
+
+.board__nav_wrap .board__nav_item:hover .nav__item_bar {
+    background-color: #00B884;
+}
+
+.board__nav_wrap .board__nav_item:hover .nav__item_text {
+    color: black;
+}
+
+.board__nav_wrap .board__nav_item:hover .nav__item_num {
+    background-color: #00B884;
+    color: white;
+}
+
+.board__nav_wrap .board__nav_itemActive .nav__item_bar {
+    background-color: #00B884;
+}
+
+.board__nav_wrap .board__nav_itemActive .nav__item_text {
+    color: black;
+}
+
+.board__nav_wrap .board__nav_itemActive .nav__item_num {
+    background-color: #00B884;
+    color: white;
 }
