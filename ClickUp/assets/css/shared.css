@@ -23,6 +23,14 @@
     src: url('../fonts/GothaProReg.woff');
 }
 
+.vertical_center {
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: #ECF9FD;
+}
+
 .bg-white {
     background-color: white;
 }
@@ -33,6 +41,10 @@
 
 .bg-red-dark {
     background-color: #FD71AF;
+}
+
+.bg-blue-dark {
+    background-color: #4ACDF9;
 }
 
 .bg-violet {
@@ -140,4 +152,8 @@
 
 .fadeout {
     animation: fadeout 1s;
+}
+
+.disabled {
+    opacity: 0.5;
 }
