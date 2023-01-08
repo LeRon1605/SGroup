@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        form {
+            width: 20vw;
+            padding: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-element {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-element input {
+            padding: 5px 10px;
+            margin: 3px 0 10px 0;
+        }
+        form button {
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            margin-left: auto;
+        }
+        .styled-table {
+            width: 50vw;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div class="form-element">
+            <label>Full name</label>
+            <input id="input-name"/>
+        </div>
+        <div class="form-element">
+            <label>Email</label>
+            <input id="input-email"/>
+        </div>
+        <div class="form-element">
+            <label>Salary</label>
+            <input id="input-salary"/>
+        </div>
+        <div class="form-element">
+            <label>City</label>
+            <input id="input-city"/>
+        </div>
+        <button id="btn-submit">Submit</button>
+    </form>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Salary</th>
+                <th>City</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            
+        </tbody>
+    </table>
+    <script src="./main.js"></script>
+</body>
+</html>

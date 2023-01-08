@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav__left a {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right * {
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.nav__right .btn {
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+.hehe {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__left a {
+        display: none;
+    }
+
+    .nav__right {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .hehe {
+        display: block;
+    }
+
+    .haha {
+        display: none;
+    }
+}
